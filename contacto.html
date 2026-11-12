@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilosFormulario.css">
+</head>
+<body>
+    <header class="encabezado">
+        <div class="datos">
+            <h1>Contacto</h1>
+            <p>Estamos aquí para ayudarte. Puedes contactarnos a través de los siguientes medios.</p>
+        </div>
+        <img src="img/hu tao.jpg" alt="La waifu de Genshin Impact">
+    </header>   
+    <nav class="navegacion">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="contacto2.html">Contacto 2</a></li>
+        </ul>
+    </nav>
+
+   
+<main class="contenedor-main-contactame">
+
+    <div class="contenedor-formulario">
+
+        <h2>CONTÁCTAME</h2>
+        <P class="subtitulo">Escríbeme y te respondo en el horario que prefieras</P>        
+
+        <form action="" method="get">
+
+            <div class="fila">
+                <div class="campo">
+                    <label for="nombre">NOMBRE</label>
+                    <input type="text" name="nombre" id="nombre" 
+                    placeholder="ingresa tu nombre" required >
+                </div>
+                <div class="campo">
+                    <label for="apellido">APELLIDO</label>
+                    <input type="text" name="apellido" id="apellido" 
+                    placeholder="Ingresa tu apellido">
+                </div>
+            </div>
+            
+           <div class="campo">
+                <label for="correo">EMAIL</label>
+                <input type="email" name="correo" id="correo"
+                placeholder="tucorreo@ejemplo.com">
+           </div>
+
+            <div class="fila">
+                <div class="campo">
+                    <label for="fecha">FECHA DE CONTACTO</label>
+                    <input type="date" name="fecha" id="fecha" min="2026-10-25">
+                </div>
+                <div class="campo">
+                    <label for="horario">HORARIO DE CONTACTO</label>
+                    <select name="horario" id="horario">
+                        <option value="mañana">mañana</option>
+                        <option value="tarde">tarde</option>
+                        <option value="noche">noche</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="campo">
+                <label for="mensaje">MENSAJE</label>
+                <textarea name="mensaje" id="mensaje" rows="4"
+                placeholder="Cuéntame en qué te puedo ayudar"></textarea>
+            </div>
+
+            <div class="botones-formulario">
+                <input class="btn btn-alt" type="reset" name="limpiar" id="limpiar" value="Limpiar">
+                <input class="btn" type="submit" value="Enviar">      
+            </div>
+            
+        </form>
+    </div>
+</main>
+
+</body>
+</html>

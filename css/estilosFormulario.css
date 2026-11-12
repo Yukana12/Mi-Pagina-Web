@@ -1,0 +1,106 @@
+
+/*APARTADO DE CONTACTAME*/
+.contenedor-main-contactame{
+    background-color: #f8fafc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 24px;
+}
+
+.contenedor-formulario{
+    background-color: #ffff;
+    width: 100%;
+    max-width: 600px; /*OCUPA HASTA 600PX NO SE DESBORDA EN PANTALLAS CHICAS*/
+    box-sizing: border-box; /*EL PADDING NO AGRANDA LA CAJA*/
+    padding: 40px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+   /* margin-top: 20px;   */
+}
+
+.contenedor-formulario h2{
+    margin: 0 0 8px;
+}
+
+.subtitulo{
+    margin: 0 0 32px;
+    color: #475569;
+}
+
+/*CADA GRUPO ETIQUETA CON SU CAMPO*/
+.campo{
+    margin-bottom: 20px;
+}
+
+/*DOS CAMPOS AL LADO*/
+.fila{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /*Se ajusta a la pantalla*/
+    gap: 16px;
+}
+
+label{
+    display: block; /*La etiqueta ocupa su propia linea*/
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #1e293b;
+}
+
+input, select, textarea{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-family: inherit;  /*Usa la misma letra del resto de la pagina*/
+    background-color: white;
+}
+
+/*cuando hago clic dentro del campo*/
+input:focus, select:focus, textarea:focus{
+    outline: none;
+    border-color: #e253eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+textarea{ 
+   resize: vertical; /*Solo se puede estirar hacia abajo*/
+}
+
+/*botones*/
+.botones-formulario{
+    display: flex; 
+    gap: 30px; 
+    margin-top: 8px;
+    align-items: center; /*Alinea los botones verticalmente al centro*/
+    justify-content: center; /*Alinea los botones horizontalmente al centro*/
+
+}
+
+.btn{
+    width: auto;  /*anula el 100% del input*/
+    padding: 12px 28px;
+    background-color: #2563eb;
+    color: white;
+    border: 1px solid #2563eb;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #1d4ed8;
+}
+
+.btn-alt{
+    background-color: white;
+    color: #1e293b;
+    border-color: #cbd5e1;
+}
+
+.btn-alt:hover{
+    background-color: #f1f5f9;
+}
